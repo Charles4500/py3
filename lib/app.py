@@ -122,5 +122,48 @@ print("expensive" not in txt)
 txt = "The best things in life are free!"
 if "expensive" not in txt:
   print("No, 'expensive' is NOT present.")
+  
+#Python - slicing string
+#Slicing --> You can return a range of characters using the slice syntax
+#You provide the start index and the end index separated by colon
+b = "Hello, World!"
+#The fifth won't be sliced
+print(b[2:5]) #output will be llo
+
+#Slicing from the start --> BY leaving out the start index the range will start from the first character
+b = "Hello, World!"
+print(b[:5]) #Hello
+
+#Slicing from the end --> By leaving out the end index the range will got to the end
+b = "Hello, World!"
+print(b[2:]) # llo, World!
+
+#Negative index --> The negative index start the slice from the end of the string that is -1 being the first
+b = "Hello, World!"
+print(b[-5:-2]) #orl
+
+#Python - modify strings
+#Uppercase --> This method makes all characters in a string to uppercase
+a = "Hello"
+print(a.upper()) #HELLO
+#Capitalize --> This method only makes the first character in a string to uppercase
+a = 'hello'
+print(a.capitalize()) #Hello
+#Lowercase --> THis makes all the characters in the stirng to lowercase
+a = 'HELLO'
+print(a.lower()) #hello 
+
+#Replace string --> This  method takes in arguments and replaces the defined character with the one passed to it
+a = "Hello"
+print(a.replace("H","h")) #hello
+
+#!Python booleans --> These are represented as either True || False
+#Evaluate values and variables --> The bool() function allows  us to evaluate an value to return a  true or false
+#!Most values are True :
+#Any string is true except an string
+#Any number us  true except 0
+#Any list.tuple,set and dictionaries are true except the empty ones
+
+
 
 
