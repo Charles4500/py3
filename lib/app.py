@@ -164,6 +164,17 @@ print(a.replace("H","h")) #hello
 #Any number us  true except 0
 #Any list.tuple,set and dictionaries are true except the empty ones
 
+#!Python operators --> They are used to perform operations on variables and values
+#Python has the following operators:
+# Arithmetic operators --> These are used perform common mathematical operation 
+
+# Assignment operators --> Use to assign values to variables
+# Comparison operators --> Mainly used to compare two values
+# Logical operators --> Used to combine conditional statements
+# Identity operators --> Mainly used to compare the objects.not if they are equal but if they are of the same object
+# Membership operators
+# Bitwise operators
+
 
 
 
