@@ -175,6 +175,103 @@ print(a.replace("H","h")) #hello
 # Membership operators
 # Bitwise operators
 
+#!Python loops --> Python has two primitive loop commands :
+#Iteration --> Repeat a condition again and again
+#Loop --> Repeat a sequence of instructions until a  certain condition is true
+# While loop --> With the while loop we can execute a set of statements as long as a condition is true
+
+#!This prints i as long as the condition is less than 6
+i = 0
+while i < 6:
+  print(i)
+  i +=1 # This must be included otherwise the loop will continue printing forever
+#The break statement --> With the break statement we can stop the loop even if the while condition is true
+
+#This will exit the loop when i is equal to 3
+i = 0
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+
+#The continue statements --> With the continue statements we can stop the current iteration and continue with the next
+#Here three will be skipped or won't be printed but the loop will continue
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+  
+#The else statement -->  With this statement we can run a block of code once when the condition is true
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is now less than  6")
+
+#!For loop --> is used for iterating over a sequence,with the for loop we can execute a set of statements once for each item in a list
+#This will print all the fruit inside this list 
+fruits = ["apple","banana" , "oranges"]
+for item in fruits:
+  print(item)
+  
+#Loop through a string as we know a string is just an array
+#This will print every word in "John"
+word = "John"
+for letters in word:
+  print(letters)
+  
+#The break statement --> We can stop the loop before it has looped/gone through all the items stored inside a sequence 
+#This will exit the loop when it reaches to the banana
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+  print(fruit)
+  if fruit == "banana":
+    break 
+  
+ #If you provide the return/print after the break it will not print the banana 
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+  if fruit == "banana":
+    break 
+  print(fruit)
+
+#The continue statement --> With the continue statement we can stop the current iteration of the loop and continue to the next
+#This will are giving it a condition that do  not print banana but print other elements
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+
+#!The range() function --> We can loop through a sequence a number of set times using the range function
+#This range() function often returns a sequence of numbers starting from 0 by default and increments it by 1 by default
+#Example
+#This condition will only print 0 -5
+for numbers in range(6):
+ print(numbers)
+ 
+#THe range function will could give it  more specific value by adding more params
+#This will only print 2 - 5
+for numbers in range(2,6):
+  print(numbers)
+
+#The range function defaults increases by  1 we can however add a specific increment value but pass it as our third argument
+#THis will give us 0,2,4,6,8
+for numbers in range (0,10,2):
+  print(numbers)
+  
+#!The else in for loop --> The else keyword in a for loop specifies a block of code to be executed when loop is finished
+#This will print all the values between 0 - 6 and also when that is done it will execute the else condition
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+
+
 
 
 
